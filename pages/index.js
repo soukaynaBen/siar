@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import Header from "../components/Header"
 import Curriculum  from "../components/Curriculum"
 import Research  from "../components/Research"
@@ -10,20 +9,27 @@ import Fellowship  from "../components/Fellowship"
 import Home  from "../components/Home"
 
 
-export default function App() {
+export default function App({data}) {
+
    
-  //  bg-orange-300/10
   return (
      <div className="scroll-smooth ">
             <Header/>
             <Home/>
-            <Curriculum />
-            <Research />
-            <Publications />
-            <Conferences />
-            <Awards />
-            <Fellowship />
+            <Curriculum  data={data.curriculum}/>
+            <Research data={data.research}/>
+            <Publications data={data.publications}/>
+            <Conferences data={data.conferences} />
+            <Awards data={data.awards}/>
+            <Fellowship data={data.fellowship} />
             <Footer/>
      </div>
   )
+}
+export async function getStaticProps() {
+ const res= await fetch(process.env.BASE_URL+"/api/data")
+ const data=await res.json()
+  return {
+    props: data, 
+  }
 }

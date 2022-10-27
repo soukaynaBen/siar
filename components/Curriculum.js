@@ -1,26 +1,9 @@
 
 import { WorkIcon,SchoolIcon,StarIcon } from '@heroicons/react/24/solid'
 
-export default function Curriculum() {
+export default function Curriculum({data}) {
 
-  const itemsArray=[
-    {
-     year:"2018-Present",
-     title:"Ph.D. Student",
-     description:"Cotutelle between the University Ibn Tofail, Kenitra, Morocco and the University Della Calabria, Rende, Italy."
-  },
-    {
-     year:"2016-2018",
-     title:"Master’s Degree of of Applied Mathematics",
-     description:"University Sidi Mohamed Ben Abdellah, Faculty Dhar Mahraz (Fez - Morocco)."
-  },
-    {
-     year:"2013-2016",
-     title:"Bachelor’s of Science in Mathematics and Applications (MA)",
-     description:"University Sidi Mohamed Ben Abdellah, Faculty of Sicence and Technology (Fez - Morocco)."
-  },
-]
-   
+
   return (
     <section className='' id="curriculum">
         <div className='flex justify-center  flex-col items-center mx-auto text-2xl'>
@@ -29,7 +12,7 @@ export default function Curriculum() {
   <div className="relative wrap overflow-hidden  h-full px-1 sm:px-2 pt-10">
     <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style={{left: "50%"}}></div>
    
-         {itemsArray.map(({year,title,description},index)=>{
+         {data.map(({year,title,description},index)=>{
              return(
               <div key={index} className={`${index%2===0 && "flex-row-reverse "} mb-8 flex justify-between items-center w-full`}>
               <div className="order-1 w-5/12"></div>

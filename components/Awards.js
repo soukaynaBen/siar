@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 
-export default function Awards() {
+export default function Awards({data}) {
 
   const ref1=useRef(0)
   const ref2=useRef(0)
@@ -12,23 +12,7 @@ export default function Awards() {
   }, [])
 
 
-  const itemsArray=[
-    {
-      title:"SIAM Student Travel Awards ",
-      description:"For the participation to the SIAM Annual Meeting 2021",
-      footer:"Virtual Conference, July 19-23, 2021"
-  },
-    {
-      title:"Best Poster Award ",
-      description:"DWCAA21 - 5th Dolomites Workshop on Constructive Approximation and Applications ",
-      footer:"Virtual Conference, September 6-10, 2021"
-  },
-    {
-      title:"Kovalevskaya Grant for ICM2022",
-      description:"For the participation to the ICM2022",
-      footer:" Virtual Conference, July 06-14, 2022"
-  }
-   ]
+ 
  const CardComponent=({title,description,footer})=>(
   
   <div className='z-20'>
@@ -47,7 +31,7 @@ export default function Awards() {
   <div ref={ref2} className='sm:grid sm:grid-cols-2 md:flex justify-end md:flex-row gap-8 md:gap-0 flex flex-col items-center  md:w-fit md:py-16 md:pl-[6em] py-10 md:mx-auto sm:px-2'>
 
 
-   {itemsArray.map((item,index)=>{
+   {data.map((item,index)=>{
     const  cardStyle=`award md:-translate-x-[${index*2}em] md:hover:-translate-x-[${index*2+1}em]`
           return(
 
