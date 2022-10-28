@@ -35,7 +35,7 @@ export default function App({data}) {
      </div>
   )
 }
-export async function getStaticProps() {
+export async function getServerSideProps() {
  const res= await fetch(process.env.BASE_URL+"/api/data")
  const data=await res.json()
   return {
