@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import React, { useEffect, useRef } from 'react'
+import React, {  useRef } from 'react'
 import { Bars4Icon, XMarkIcon } from '@heroicons/react/24/solid'
 
 
@@ -20,8 +20,8 @@ export default function Header() {
   const header=useRef()
     
   const LinkComponent=({item:{title, itemStyle, href}}) =>{
-      return ( <li className={itemStyle} >
-      <Link href={href}><a>{title}</a></Link> 
+      return ( <li onClick={removeActive} className={itemStyle} >
+      <Link  href={href}><a>{title}</a></Link> 
     </li>)
   }
 
@@ -37,7 +37,7 @@ export default function Header() {
   
   
   return (
-    <header className='sticky h-20 top-0   z-50 shadow-lg bg-[#fffefc]' ref={header}>
+    <header className='sticky h-20 top-0 transition-all duration-1000    z-50 shadow-lg bg-[#fffefc]' ref={header}>
       <Head> <title>Najoua Siar</title></Head> 
       <div className='flex items-center   min-h-full mx-auto max-w-[2000px]'>
 

@@ -2,6 +2,19 @@ import Image from 'next/image'
 import React from 'react'
 
 export default function Home() {
+    const myLoader = ({ src, width, quality }) => {
+        console.log(`/${src}?q=${quality || 75}`)
+        return `/${src}?q=${quality || 75}`
+      }
+
+      const MyImage = ({src,alt,...props}) => {
+        return (
+          <Image {...props}
+            loader={myLoader}
+            src={src}
+          />
+        )
+      }
     const heroImageStyle={
         backgroundImage:'url("./hero-image.jpg") ',
         backgroundSize:"cover",
@@ -27,7 +40,7 @@ export default function Home() {
             <p className='text-lg  text-slate-900/80' >Email: najoua.siar@uit.ac.ma</p>
                 </div>
                 <div className='w-60 h-60 sm:w-72 sm:h-72 shrink-0 relative  border-8 rounded-md   border-white shadow-inner drop-shadow-2xl  ' >
-                    <Image src="/siar.jpg" className='absolute overflow-hidden  ' objectFit='cover'  layout='fill' alt="najoua siar"/> 
+                    <MyImage src="siar.jpg" className='absolute overflow-hidden  ' objectFit='cover'  layout='fill' alt="najoua siar"/> 
                 </div>
             </div>
      

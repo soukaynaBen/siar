@@ -72,7 +72,7 @@ a {
     @apply hidden transition-all opacity-0 ;
   }
   .menu{
-    @apply   bg-[#fffefc] hidden flex-1  sm:flex justify-between border-b-2 sm:border-0 items-center py-6 px-4  rounded-b-xl transition-all ;
+    @apply   bg-[#fffefc] hidden flex-1  sm:flex justify-between border-b-2 sm:border-0 items-center py-6 px-4  rounded-b-xl transition-all duration-1000;
   }
   .active .menu{
     @apply  h-auto  flex flex-col sm:flex-row;
