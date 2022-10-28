@@ -4,7 +4,7 @@ export default function Awards({data}) {
 
   const ref1=useRef(0)
   const ref2=useRef(0)
-
+  const ref= useRef("")
   useEffect(() => {
     if(typeof window !== 'undefined' ){    
       ref1.current.scrollLeft=Math.abs(parseInt(window.getComputedStyle(document.body).width)-parseInt(window.getComputedStyle(ref2.current).width) )*0.5;
@@ -32,10 +32,10 @@ export default function Awards({data}) {
 
 
    {data.map((item,index)=>{
-    const  cardStyle=`award md:-translate-x-[${index*2}em] md:hover:-translate-x-[${index*2+1}em]`
+      ref.current=`award md:-translate-x-[${index*2}em] md:hover:-translate-x-[${index*2+1}em]`
           return(
 
-        <div  key={index} className={cardStyle} >
+        <div  key={index} className={ref.current} >
           <div className="background"></div>
                  <CardComponent {...item}/>
         </div>

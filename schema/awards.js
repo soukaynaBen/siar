@@ -1,6 +1,6 @@
 export default {
-    name:"curriculum",
-    title:"Curriculum",
+    name:"publications",
+    title:"Publications",
     type:"document",
     fields:[
         {
@@ -14,8 +14,13 @@ export default {
         type:"string",
        },
         {
-        name:"description",
-        title:"Description",
+        name:"descriptions",
+        title:"Descriptions",
+        type:"string",
+       },
+        {
+        name:"footer",
+        title:"Footer",
         type:"string",
        },
 ],

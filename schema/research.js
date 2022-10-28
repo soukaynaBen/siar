@@ -1,0 +1,27 @@
+export default {
+    name:"publications",
+    title:"Publications",
+    type:"document",
+    fields:[
+        {
+        name:"year",
+        title:"Year",
+        type:"string",
+       },
+        {
+        name:"title",
+        title:"Title",
+        type:"string",
+       },
+        {
+        name:"descriptions",
+        title:"Descriptions",
+        type:"string",
+       },
+        {
+        name:"footer",
+        title:"Footer",
+        type:"string",
+       },
+],
+}
