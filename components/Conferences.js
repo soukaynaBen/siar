@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Conferences({data}) {
+export default function Conferences({conferences:data}) {
 
  
  const CardComponent=({title,description,footer,year})=>(
@@ -22,7 +22,7 @@ export default function Conferences({data}) {
    <div className='mx-auto'>
    <div className='flex min-h-[450px] space-x-4 scrollbar-thin scrollbar-thumb-[#b49db7]/20 scrollbar-track-gray-100 items-center px-10 w-auto' >
 
-   {data.map((item,index)=>{
+   {data?.map((item,index)=>{
           return(
                  <CardComponent key={index} {...item}/>
           )

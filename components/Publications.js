@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Publications({data}) {
+export default function Publications({publications:data}) {
  
 
 const CardComponent=({year,title,descriptions,footer,last,even})=>(
@@ -20,7 +20,7 @@ const CardComponent=({year,title,descriptions,footer,last,even})=>(
   
     <div  className='grid grid-cols-1 sm:grid-cols-2 px-5  gap-8 mx-2 md:mx-auto'>
 
-    {data.map((item,index,items)=>{
+    {data?.map((item,index,items)=>{
                     return(
                       <CardComponent  last={items.length-1===index} key={index} even={items.length%2===0} {...item} />
                     )

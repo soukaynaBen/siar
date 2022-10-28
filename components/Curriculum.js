@@ -1,7 +1,6 @@
 
-import { WorkIcon,SchoolIcon,StarIcon } from '@heroicons/react/24/solid'
 
-export default function Curriculum({data}) {
+export default function Curriculum({curriculum:data}) {
 
 
   return (
@@ -12,7 +11,7 @@ export default function Curriculum({data}) {
   <div className="relative wrap overflow-hidden  h-full px-1 sm:px-2 pt-10">
     <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style={{left: "50%"}}></div>
    
-         {data.map(({year,title,description},index)=>{
+         {data?.map(({year,title,description},index)=>{
              return(
               <div key={index} className={`${index%2===0 && "flex-row-reverse "} mb-8 flex justify-between items-center w-full`}>
               <div className="order-1 w-5/12"></div>

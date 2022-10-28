@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Research({data}) {
+export default function Research({research:data}) {
   return (
     <section className="py-16 sm:py-28" id="research">
       <h2  className="title">Research</h2>

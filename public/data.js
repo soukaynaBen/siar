@@ -16,7 +16,9 @@ const data=
      title:"Bachelor’s of Science in Mathematics and Applications (MA)",
      description:"University Sidi Mohamed Ben Abdellah, Faculty of Sicence and Technology (Fez - Morocco)."
   },
-],"research":"On my research I am focusing on the interpolation and approximation theory on scattered data. Specifically, I am working on the Shepard&apos;s method and its modifications and extensions to high dimensions.","publications":[
+],
+"research":"On my research I am focusing on the interpolation and approximation theory on scattered data. Specifically, I am working on the Shepard&apos;s method and its modifications and extensions to high dimensions.",
+"publications":[
 
     {
       year:"2020",

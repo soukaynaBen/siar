@@ -7,21 +7,30 @@ import Awards  from "../components/Awards"
 import Footer  from "../components/Footer"
 import Fellowship  from "../components/Fellowship"
 import Home  from "../components/Home"
+import { useEffect, useState } from "react"
 
 
 export default function App({data}) {
 
-   
+
   return (
-     <div className="scroll-smooth ">
+     <div className="">
             <Header/>
-            <Home/>
-            <Curriculum  data={data.curriculum}/>
-            <Research data={data.research}/>
-            <Publications data={data.publications}/>
-            <Conferences data={data.conferences} />
-            <Awards data={data.awards}/>
-            <Fellowship data={data.fellowship} />
+            <Home/>  
+             {data?
+              <>
+            <Curriculum  curriculum={data?.curriculum}/>
+            <Research research={data?.research}/>
+            <Publications publications={data?.publications}/>
+            <Conferences conferences={data?.conferences} />
+            <Awards awards={data?.awards}/>
+            <Fellowship fellowship={data?.fellowship} />
+              </>:(<div class="relative  ">
+    <div class="border-t-transparent border-solid animate-spin mx-auto rounded-full border-[#7a5969]/20 border-4 sm:border-[6px] sm:h-24 sm:w-24 h-16 w-16">
+    </div>
+        <h6 className=" mx-auto w-fit m-3 text-amber-900/60">Loading...</h6>
+</div>)
+             }
             <Footer/>
      </div>
   )

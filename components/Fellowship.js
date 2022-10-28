@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Fellowship({data}) {
+export default function Fellowship({fellowship:data}) {
 
   
    const CardComponent=({year,title,descriptions,footer,last,even})=>(
@@ -20,10 +20,8 @@ export default function Fellowship({data}) {
      <h2  className='title pb-16'>Research Fellowship and Funding</h2>
  
    <div  className='grid grid-cols-1 sm:grid-cols-2 px-5  gap-8 mx-2 md:mx-auto'>
-            {data.map((item,index,items)=>{
-              console.log("even",items.length%2===0)
-              console.log("last",items.length-1===index)
-              console.log("n",items.length)
+            {data?.map((item,index,items)=>{
+              
                     return(
                       <CardComponent  last={items.length-1===index} key={index} even={items.length%2===0} {...item} />
                     )

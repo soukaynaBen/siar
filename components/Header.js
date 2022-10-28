@@ -21,7 +21,7 @@ export default function Header() {
     
   const LinkComponent=({item:{title, itemStyle, href}}) =>{
       return ( <li className={itemStyle} >
-      <Link href={href}>{title}</Link> 
+      <Link href={href}><a>{title}</a></Link> 
     </li>)
   }
 
