@@ -1,0 +1,22 @@
+export default {
+    name:"curriculum",
+    title:"Curriculum",
+    type:"document",
+    fields:[
+        {
+        name:"year",
+        title:"Year",
+        type:"string",
+       },
+        {
+        name:"title",
+        title:"Title",
+        type:"string",
+       },
+        {
+        name:"description",
+        title:"Description",
+        type:"string",
+       },
+],
+}
