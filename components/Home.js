@@ -2,8 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 
 export default function Home() {
-    const myLoader = ({ src, width, quality }) => {
-        console.log(`/${src}?q=${quality || 75}`)
+    const myLoader = ({ src, quality }) => {
         return `/${src}?q=${quality || 75}`
       }
 

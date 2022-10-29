@@ -1,7 +1,7 @@
 
 
 export default function Curriculum({curriculum:data}) {
-
+          
 
   return (
     <section className='' id="curriculum">

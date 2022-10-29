@@ -9,11 +9,11 @@ const headerItems=[
 {title:"Curriculum Vitae",itemStyle:"nav-menu-item",href:"#curriculum" },
 {title:"Research",itemStyle:"nav-menu-item hidden lg:inline-block",href:"#research" },
 {title:"Publications",itemStyle:"nav-menu-item",href:"#publications" },
-{title:"Conferences",itemStyle:"hidden sm:inline-block lg:hidden",href:"#conferences" },
+{title:"Conferences",itemStyle:"nav-menu-item hidden sm:inline-block lg:hidden",href:"#conferences" },
 {title:"Conferences and Workshops",itemStyle:"nav-menu-item inline-block  sm:hidden lg:inline-block",href:"#conferences" },
-{title:"Awards ",itemStyle:"hidden sm:inline-block lg:hidden",href:"#awards" },
+{title:"Awards ",itemStyle:"nav-menu-item hidden sm:inline-block lg:hidden",href:"#awards" },
 {title:"Awards and Grants",itemStyle:"nav-menu-item inline-block  sm:hidden lg:inline-block",href:"#awards" },
-{title:"Funding",itemStyle:"hidden sm:inline-block lg:hidden",href:"#fellowship" },
+{title:"Funding",itemStyle:"nav-menu-item hidden sm:inline-block lg:hidden",href:"#fellowship" },
 {title:"Research Fellowship and Funding",itemStyle:"nav-menu-item inline-block  sm:hidden lg:inline-block",href:"#fellowship" }
 ]
 export default function Header() {

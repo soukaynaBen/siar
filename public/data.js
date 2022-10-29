@@ -44,7 +44,8 @@ const data=
       descriptions:["On the numerical computation of bivariate Lagrange polynomials"],
       footer:" Applied Mathematics Letters, 112: 106845"
   }
-   ],"conferences":[
+   ],
+   "conferences":[
     {
       year:" 2021",
       title:"J2SD 2021 - Journées Scientifiques des Systèmes Dynamiques 2021",
