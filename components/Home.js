@@ -40,7 +40,7 @@ export default function Home() {
                 </div>
                 <div className='w-60 h-60 sm:w-72 sm:h-72 shrink-0 relative  border-8 rounded-md   border-white shadow-inner drop-shadow-2xl ' >
                   <div className='absolute left-0 top-0 h-full w-full bg-[#774648]/10 blur-sm  '></div>
-                    <MyImage src="/siar.jpg" className='absolute overflow-hidden ' objectFit='cover'    layout='fill' alt="najoua siar" /> 
+                    <MyImage src="siar.jpg" className='absolute overflow-hidden ' objectFit='cover'    layout='fill' alt="najoua siar" /> 
                 </div>
             </div>
      
