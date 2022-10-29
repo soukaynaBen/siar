@@ -45,5 +45,6 @@ export async function getStaticProps() {
  
   return {
     props:{data:[curriculum, publications, research, conferences, awards, fellowship] } , 
+    revalidate: 60, 
   }
 }
