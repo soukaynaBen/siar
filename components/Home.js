@@ -38,8 +38,9 @@ export default function Home() {
             <p className='text-lg  text-slate-900/80' >Fax: ------</p>
             <p className='text-lg  text-slate-900/80' >Email: najoua.siar@uit.ac.ma</p>
                 </div>
-                <div className='w-60 h-60 sm:w-72 sm:h-72 shrink-0 relative  border-8 rounded-md   border-white shadow-inner drop-shadow-2xl  ' >
-                    <MyImage src="siar.jpg" className='absolute overflow-hidden  ' objectFit='cover'  layout='fill' alt="najoua siar"/> 
+                <div className='w-60 h-60 sm:w-72 sm:h-72 shrink-0 relative  border-8 rounded-md   border-white shadow-inner drop-shadow-2xl ' >
+                  <div className='absolute left-0 top-0 h-full w-full bg-[#774648]/10 blur-sm  '></div>
+                    <MyImage src="/siar.jpg" className='absolute overflow-hidden ' objectFit='cover'    layout='fill' alt="najoua siar" /> 
                 </div>
             </div>
      
