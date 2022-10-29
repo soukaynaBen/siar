@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-/node_modules/najouasiar/node_modules
+/najouasiar/node_modules
 /.pnp
 .pnp.js
 
