@@ -4,13 +4,16 @@ export default function Conferences({conferences:data}) {
 
  
  const CardComponent=({title,description,footer,year})=>(
-  <div className='card '>
+  <div className='card'>
   <div className='h-[5px] bg-[#d7cdd8] absolute left-0 top-3 right-0 '/>
-   <div className='flex flex-col justify-center'>
-     <p className='text-lg'>{title}</p>
-     <p className='text-sm text-gray-800 pt-2'>{description} </p>
-     <p className='footer'>{footer}</p>
-     <p className='pill'>{year}</p>
+   <div className=' w-full flex flex-col justify-between '>
+      <div className=''>
+        <p className='text-lg'>{title}</p>
+        <p className='text-sm text-gray-800 pt-2'>{description} </p>
+        <p className='footer'>{footer}</p>
+
+      </div>
+     <p className='pill '>{year}</p>
    </div>
 </div>
   

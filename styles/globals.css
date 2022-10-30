@@ -41,10 +41,10 @@ a {
     @apply text-2xl md:text-4xl text-center font-semibold text-[#b49db7];
   }
   .card{
-    @apply relative min-w-[250px] max-w-[300px] hover:scale-105  min-h-[350px] p-8 pt-12 transition-all  rounded-md select-none   shadow-xl;
+    @apply  relative flex justify-center items-stretch  min-w-[250px] max-w-[300px] hover:scale-105  min-h-[350px] p-8 pt-12 transition-all  rounded-md select-none   shadow-xl;
   }
   .pill{
-    @apply text-sm ml-2 my-6 rounded-lg p-2 py-1 bg-[#b49db7] w-fit text-white absolute bottom-2 right-2 text-center;
+    @apply  self-end  mt-1 text-sm ml-2  rounded-lg p-2 py-1 bg-[#b49db7] w-fit text-white  text-center;
   }
   .footer{
     @apply text-sm text-[#a68aaa];
