@@ -32,7 +32,7 @@ export default function Home() {
         
             <h2 className='text-[#766279]/90 font-semibold text-3xl py-4'>Najoua Siar</h2>
             <p className='text-lg text-slate-900/80' >Department of Mathematics and Computer Science - University of Calabria</p>
-            <p className='text-lg text-slate-900/80' >Via Pietro Bucci, cubo 30/A</p>
+            <p className='text-lg text-slate-900/80' >Rende, cubo 30/A</p>
             <p className='text-lg text-slate-900/80' >87036 Rende (CS) - Italy</p>
             <p className='text-lg text-slate-900/80 ' >Phone: -----</p>
             <p className='text-lg  text-slate-900/80' >Fax: ------</p>
