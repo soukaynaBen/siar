@@ -29,7 +29,7 @@ export default function Footer() {
                 </div>
                 <div className='flex items-center space-x-5 justify-center'>
                     <EnvelopeIcon className='text-[#c7644e] h-7 w-7 animate-pulse'/>
-                    <p className='text-lg md:text-2xl'>Najoua.siar@gmail.com</p>
+                    <p className='text-lg md:text-2xl'>najoua.siar@uit.ac.ma</p>
                 </div>
                 <div className='flex items-center space-x-5 justify-center'>
                     <MapPinIcon className='text-[#c7644e] h-7 w-7 animate-pulse'/>
