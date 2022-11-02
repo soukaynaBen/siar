@@ -14,7 +14,7 @@ const headerItems=[
 {title:"Awards ",itemStyle:"nav-menu-item hidden sm:inline-block lg:hidden",href:"#awards" },
 {title:"Awards and Grants",itemStyle:"nav-menu-item inline-block  sm:hidden lg:inline-block",href:"#awards" },
 {title:"Funding",itemStyle:"nav-menu-item hidden sm:inline-block lg:hidden",href:"#fellowship" },
-{title:"Research Fellowship and Funding",itemStyle:"nav-menu-item inline-block  sm:hidden lg:inline-block",href:"#fellowship" }
+{title:"Research Fellowships and Funding",itemStyle:"nav-menu-item inline-block  sm:hidden lg:inline-block",href:"#fellowship" }
 ]
 export default function Header() {
   const header=useRef()
