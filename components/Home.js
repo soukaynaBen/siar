@@ -30,11 +30,11 @@ export default function Home() {
 
                 <div className=' p-4'>
         
-            <h2 className='text-[#766279]/90 font-semibold text-3xl py-4'>Najoua Siar</h2>
+            <h2 className='text-[#766279]/90 font-semibold text-3xl py-4'>Prof. Najoua Siar</h2>
             <p className='text-lg text-slate-900/80' >Department of Mathematics - Faculty of Sciences, University Moulay Ismaïl</p>
             <p className='text-lg text-slate-900/80' >B.P. 11201 Zitoune, Meknès - Morocco</p>
             <p className='text-lg text-slate-900/80 ' >Phone: -----</p>
-            <p className='text-lg  text-slate-900/80' >Email: najoua.siar@uit.ac.ma</p>
+            <p className='text-lg  text-slate-900/80' >Email: najoua.siar@gmail.com</p>
                 </div>
                 <div className='w-60 h-60 sm:w-72 sm:h-72 shrink-0 relative  border-8 rounded-md   border-white shadow-inner drop-shadow-2xl ' >
                   <div className='absolute left-0 top-0 h-full w-full bg-[#774648]/10 blur-sm  '></div>
