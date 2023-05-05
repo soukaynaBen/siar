@@ -5,7 +5,7 @@ import {PhoneIcon,MapPinIcon,EnvelopeIcon} from '@heroicons/react/24/solid'
 export default function Footer() {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const onSubmit = formData => {
-      window.location.href=`mailto:najoua.siar@gmail.com&subject=${formData.subject}&body=Hi my name is ${formData.name}. ${formData.message} (${formData.email})`
+      window.location.href=`mailto:s.najoua@umi.ac.ma&subject=${formData.subject}&body=Hi my name is ${formData.name}. ${formData.message} (${formData.email})`
       reset({
           name: "",
           subject: "",
